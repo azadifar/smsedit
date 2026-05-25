@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView style="@style/FieldLabel" android:text="شماره فرستنده" />
+    <EditText
+        android:id="@+id/et_inject_address"
+        style="@style/FieldInput"
+        android:inputType="phone"
+        android:hint="+98912..." />
+
+    <TextView style="@style/FieldLabel" android:text="متن پیام" android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/et_inject_body"
+        style="@style/FieldInput"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:hint="متن پیام..." />
+
+    <TextView style="@style/FieldLabel" android:text="نوع" android:layout_marginTop="12dp" />
+    <Spinner
+        android:id="@+id/sp_inject_type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/input_bg"
+        android:paddingStart="12dp"
+        android:entries="@array/inject_types" />
+
+</LinearLayout>

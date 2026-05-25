@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_compose"
+        android:title="پیام جدید"
+        android:icon="@android:drawable/ic_menu_send"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_inject"
+        android:title="افزودن پیام ساختگی"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_default"
+        android:title="تنظیم به عنوان پیش‌فرض"
+        app:showAsAction="never" />
+
+</menu>

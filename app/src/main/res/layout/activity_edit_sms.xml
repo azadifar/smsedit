@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1a9e75"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Sender/Recipient -->
+            <TextView style="@style/FieldLabel" android:text="شماره فرستنده / گیرنده" />
+            <EditText
+                android:id="@+id/et_address"
+                style="@style/FieldInput"
+                android:inputType="phone"
+                android:hint="+98912..." />
+
+            <!-- Message Body -->
+            <TextView style="@style/FieldLabel" android:text="متن پیام" android:layout_marginTop="12dp" />
+            <EditText
+                android:id="@+id/et_body"
+                style="@style/FieldInput"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:maxLines="8"
+                android:gravity="top|start"
+                android:hint="متن پیام را وارد کنید..." />
+
+            <!-- Date + Time row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView style="@style/FieldLabel" android:text="تاریخ" />
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/FieldInput"
+                        android:drawableStart="@drawable/ic_calendar"
+                        android:drawablePadding="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/input_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/FieldLabel" android:text="ساعت" />
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/FieldInput"
+                        android:drawableStart="@drawable/ic_clock"
+                        android:drawablePadding="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/input_bg" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Type -->
+            <TextView style="@style/FieldLabel" android:text="نوع پیام" android:layout_marginTop="12dp" />
+            <Spinner
+                android:id="@+id/sp_type"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_bg"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:entries="@array/sms_types" />
+
+            <!-- Read status -->
+            <TextView style="@style/FieldLabel" android:text="وضعیت خواندن" android:layout_marginTop="12dp" />
+            <Spinner
+                android:id="@+id/sp_read"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_bg"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:entries="@array/read_states" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#f9f9f9"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="انصراف"
+            android:textColor="#666"
+            android:background="@drawable/btn_outline"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="ذخیره تغییرات"
+            android:textColor="#fff"
+            android:background="@drawable/btn_primary" />
+
+    </LinearLayout>
+
+</LinearLayout>

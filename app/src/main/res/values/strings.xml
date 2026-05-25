@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Editor</string>
+
+    <string-array name="sms_types">
+        <item>دریافتی (Inbox)</item>
+        <item>ارسال شده (Sent)</item>
+        <item>پیش‌نویس (Draft)</item>
+        <item>صندوق خروجی (Outbox)</item>
+    </string-array>
+
+    <string-array name="read_states">
+        <item>خوانده شده</item>
+        <item>خوانده نشده</item>
+    </string-array>
+
+    <string-array name="inject_types">
+        <item>دریافتی (به نظر برسد از دیگری آمده)</item>
+        <item>ارسالی (به نظر برسد من فرستادم)</item>
+    </string-array>
+</resources>

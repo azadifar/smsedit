@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#1a9e75</color>
+    <color name="colorPrimaryDark">#0f6e56</color>
+    <color name="colorAccent">#1a9e75</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="avatar_1">#9FE1CB</color>
+    <color name="avatar_2">#B5D4F4</color>
+    <color name="avatar_3">#F5C4B3</color>
+    <color name="avatar_4">#FAC775</color>
+    <color name="avatar_5">#F4C0D1</color>
+    <color name="avatar_6">#CECBF6</color>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="FieldLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#888</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="FieldInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/input_bg</item>
+    </style>
+
+</resources>

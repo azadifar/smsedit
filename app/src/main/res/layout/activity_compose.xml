@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1a9e75"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView style="@style/FieldLabel" android:text="شماره گیرنده" />
+        <EditText
+            android:id="@+id/et_to"
+            style="@style/FieldInput"
+            android:inputType="phone"
+            android:hint="+98..." />
+
+        <TextView style="@style/FieldLabel" android:text="متن پیام" android:layout_marginTop="12dp" />
+        <EditText
+            android:id="@+id/et_message"
+            style="@style/FieldInput"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:gravity="top"
+            android:hint="پیام خود را بنویسید..." />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="ارسال پیام"
+        android:textColor="#fff"
+        android:background="@drawable/btn_primary"
+        android:layout_margin="12dp" />
+
+</LinearLayout>
